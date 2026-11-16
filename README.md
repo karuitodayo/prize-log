@@ -1,32 +1,27 @@
-# React + TypeScript + Vite
+# PRIZE LOG
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+プライズゲーム（クレーンゲーム等）用のお小遣い・プレイ記録管理アプリです。
 
-Currently, two official plugins are available:
+## 主な機能
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 月間予算の設定と残り予算の表示
+- 「おでかけ」単位でのプレイ記録
+- 今月の景品獲得数の集計
+- 店舗ごとの訪問履歴・店内マップ（任意登録）
 
-## React Compiler
+## 使用技術
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + TypeScript
+- Vite
+- leaflet（地図表示）
 
-## Expanding the Oxlint configuration
+## データの保存について
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+サーバーやデータベースは使用せず、ブラウザのlocalStorageにのみデータを保存します。
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## セットアップ
+
+```bash
+npm install
+npm run dev
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.

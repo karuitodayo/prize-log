@@ -1,0 +1,115 @@
+/* おでかけ画面専用スタイル（ホーム画面と見た目を統一。他画面の共通クラスは変更しない） */
+
+.outing-card-header {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-subtext);
+  margin: 0 0 8px;
+}
+
+.outing-remaining-amount {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: 0.01em;
+}
+
+.outing-usage-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-subtext);
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.outing-alert-text {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.outing-prize-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--color-subtext);
+  font-weight: 700;
+}
+
+.outing-record-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.outing-record-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.outing-record-thumb {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtext);
+  overflow: hidden;
+}
+
+.outing-record-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.outing-record-main {
+  font-weight: 700;
+  margin: 0 0 2px;
+  font-size: 14px;
+}
+
+.outing-record-sub {
+  font-size: 12px;
+  color: var(--color-subtext);
+  margin: 0;
+}
+
+.outing-record-right {
+  text-align: right;
+  flex: none;
+}
+
+.outing-record-amount {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 2px;
+}
+
+.outing-record-result-won {
+  color: var(--color-yellow);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.outing-record-result-lost {
+  color: var(--color-subtext);
+  font-size: 12px;
+  margin: 0;
+}
+
+.card.outing-record-card {
+  padding: 12px 16px;
+  margin-bottom: 0;
+}

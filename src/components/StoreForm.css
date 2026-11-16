@@ -1,0 +1,19 @@
+.store-form-map {
+  width: 100%;
+  height: 200px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: var(--color-card-alt);
+}
+
+.store-form-map-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.store-form-map-actions .icon-btn {
+  flex: none;
+  padding: 0 12px;
+}

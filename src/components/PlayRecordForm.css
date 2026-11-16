@@ -1,0 +1,85 @@
+.form-box {
+  max-width: 400px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.form-box-body {
+  overflow-y: auto;
+  padding-right: 2px;
+  flex: 1;
+}
+
+.photo-picker {
+  position: relative;
+  width: 96px;
+}
+
+.photo-picker-box {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-border);
+  background: var(--color-card-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+}
+
+.photo-picker-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-subtext);
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.photo-picker-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-picker-remove {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--color-danger);
+  color: #fff;
+  border: 2px solid var(--color-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.photo-picker-replace-link {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 6px 0;
+  min-height: 32px;
+  text-align: left;
+}

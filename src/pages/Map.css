@@ -1,0 +1,126 @@
+.map-card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.visited-map {
+  width: 100%;
+  height: 260px;
+}
+
+.store-category-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.store-keyword-btn {
+  width: 100%;
+}
+
+.store-nearme-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: var(--color-subtext);
+}
+
+.spin {
+  animation: map-spin 1s linear infinite;
+}
+
+@keyframes map-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.store-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.store-card {
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.store-card-highlight {
+  border-color: var(--color-accent);
+  background: var(--color-card-alt);
+}
+
+.store-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.store-card-name {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.store-card-badge {
+  flex: none;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: rgba(87, 199, 255, 0.12);
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.store-card-noposition {
+  color: var(--color-yellow);
+}
+
+.store-card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+  margin: 10px 0;
+}
+
+.store-card-stat-label {
+  display: block;
+  font-size: 11px;
+  color: var(--color-subtext);
+}
+
+.store-card-stat-value {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.store-card-memo {
+  white-space: pre-wrap;
+  margin-bottom: 8px;
+}
+
+.store-card-detail-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 40px;
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,19 @@
+.store-detail-back {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 44px;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 6px;
+}
+
+.store-detail-name {
+  font-size: 17px;
+  font-weight: 700;
+}

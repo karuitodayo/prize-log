@@ -1,0 +1,172 @@
+/* ホーム画面専用スタイル（他画面の共通クラスは変更しない） */
+
+.home-card-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-subtext);
+  margin: 0 0 8px;
+}
+
+.home-card-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.home-status-badge {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.home-remaining-amount {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  letter-spacing: 0.01em;
+}
+
+.home-usage-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-subtext);
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.home-alert-text {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.home-outing-memo {
+  font-size: 13px;
+  color: var(--color-subtext);
+  margin: 0 0 10px;
+}
+
+.home-outing-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.card.home-compact-card {
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.home-prize-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-prize-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-subtext);
+}
+
+.home-prize-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-yellow);
+}
+
+.home-more-link {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 4px 0;
+  min-height: 32px;
+}
+
+.home-record-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-record-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.home-record-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.home-record-item:first-child {
+  padding-top: 0;
+}
+
+.home-record-thumb {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtext);
+  overflow: hidden;
+}
+
+.home-record-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-record-main {
+  font-weight: 700;
+  margin: 0 0 2px;
+  font-size: 14px;
+}
+
+.home-record-sub {
+  font-size: 12px;
+  color: var(--color-subtext);
+  margin: 0;
+}
+
+.home-record-right {
+  text-align: right;
+  flex: none;
+}
+
+.home-record-amount {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0 0 2px;
+}
+
+.home-record-result-won {
+  color: var(--color-yellow);
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.home-record-result-lost {
+  color: var(--color-subtext);
+  font-size: 12px;
+  margin: 0;
+}

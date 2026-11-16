@@ -1,0 +1,164 @@
+/* 履歴画面専用スタイル（ホーム・おでかけ画面と見た目を統一。他画面の共通クラスは変更しない） */
+
+.history-summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.history-summary-label {
+  font-size: 12px;
+  color: var(--color-subtext);
+  margin: 0 0 4px;
+}
+
+.history-summary-amount {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.history-summary-count {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-yellow);
+  margin: 0;
+  text-align: right;
+}
+
+.history-outing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.history-outing-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.history-outing-status {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-accent);
+  flex: none;
+}
+
+.history-outing-stats {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--color-subtext);
+  margin: 0 0 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.history-record-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.history-record-item {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.history-record-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.history-record-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.history-record-thumb {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtext);
+  overflow: hidden;
+}
+
+.history-record-main {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.history-record-won {
+  color: var(--color-yellow);
+}
+
+.history-record-lost {
+  color: var(--color-subtext);
+  font-weight: 600;
+}
+
+.history-record-amount {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  flex: none;
+}
+
+.history-prize-row {
+  display: flex;
+  gap: 12px;
+}
+
+.history-prize-placeholder {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: var(--radius-md);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-subtext);
+  overflow: hidden;
+}
+
+.history-prize-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-prize-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.history-prize-meta {
+  font-size: 12px;
+  color: var(--color-subtext);
+  margin: 0 0 2px;
+}
+
+.history-prize-amount {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-yellow);
+  margin: 4px 0 0;
+}

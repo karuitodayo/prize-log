@@ -1,0 +1,68 @@
+.amount-input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.amount-field-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.amount-field {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 22px;
+  font-weight: 700;
+  padding: 10px 44px 10px 14px;
+  min-height: 48px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.amount-field:focus {
+  outline: 2px solid var(--color-accent);
+}
+
+.amount-field-suffix {
+  position: absolute;
+  right: 14px;
+  color: var(--color-subtext);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.amount-step-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.amount-step-btn {
+  flex: 1;
+  min-width: 70px;
+  min-height: 40px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-card-alt);
+  color: var(--color-accent-sub);
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.amount-step-btn:active {
+  background: var(--color-border);
+}

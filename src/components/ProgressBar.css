@@ -1,0 +1,25 @@
+.progress-track {
+  width: 100%;
+  height: 10px;
+  background: var(--color-card-alt);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.progress-normal {
+  background: var(--color-accent);
+}
+
+.progress-warning {
+  background: var(--color-yellow);
+}
+
+.progress-over {
+  background: var(--color-danger);
+}

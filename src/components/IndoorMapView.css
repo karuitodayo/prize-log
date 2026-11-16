@@ -1,0 +1,92 @@
+.indoor-map-empty-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.indoor-map-url-text {
+  word-break: break-all;
+  font-size: 13px;
+  color: var(--color-accent-sub);
+  background: var(--color-card-alt);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin-bottom: 8px;
+}
+
+/* IndoorMapImage のラッパー。line-height:0 で画像下の余白を消し、
+   このボックス＝画像の実表示領域になるようにする */
+.indoor-map-image-wrap {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.indoor-map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.indoor-map-zoom-hint {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(15, 17, 21, 0.75);
+  color: var(--color-text);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 999px;
+  line-height: 1.4;
+}
+
+.indoor-map-actions-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: calc(16px + env(safe-area-inset-top, 0px));
+  right: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.image-lightbox-content {
+  width: 100%;
+  max-width: 480px;
+  cursor: default;
+}
+
+.image-lightbox-content .indoor-map-image {
+  border-radius: var(--radius-md);
+}
